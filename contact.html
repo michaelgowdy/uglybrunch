@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>contact ugly brunch</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <h1><a href="index.html">UGLY BRUNCH</a></h1>
+      <h2>contact</h2>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="work.html">work</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+  <main>
+  <section>this is where you can request a commission,<br>
+      critique my work,<br>
+      or say just say "hi":<br>
+  </section>
+  <form method="post" class="center" action="https://webdevbasics.net/scripts/fishcreek.php">
+    <label for="myName">name:</label>
+    <input type="text" name="myName" id="myName" required>
+    <label for="myEmail">e-Mail:</label>
+    <input type="email" name="myEmail" id="myEmail" required>
+    <label for="mySubject">subject</label>
+      <select id="mySubject">
+        <option value="commission_inquiry" label="commission_inquiry">
+        <option value="critique" label="critique">
+        <option value="just_saying_hi" label="just_saying_hi">
+      </select>
+    <label for="myComments">don't be bashful:</label>
+    <textarea name="myComments" id="myComments" rows="2" cols="20" required ></textarea>
+    <input type="submit" value="submit">
+    <img src="images/hello.jpg" width="400" height="400" alt="Contact">
+  </form>
+  </main>
+  <footer>
+Copyright &copy; 2021 <a href="mailto:michaelmichaelgowdy@gmail.com">Ugly Brunch</a>
+  </footer>
+</div>
+</body>
+</html>
