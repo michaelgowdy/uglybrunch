@@ -1,35 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>contact ugly brunch</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="styles/styles.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Page Layout</title>
+	<style>
+		.head1 {
+			font-size:50px;
+			color:#1f262e;
+      /* color:#81b3e5; */
+      /* color:#5c7d9d; */
+      padding-left: 30px;
+      font-family: monospace;
+			font-weight:normal;
+		}
+		.head2 {
+			font-size:20px;
+      padding-left: 20px;
+			padding-top: 20px;
+      color:#1f262e;
+			margin-left:10px;
+			margin-bottom:15px;
+      font-family: monospace;
+		}
+
+		body {
+			margin: 0 auto;
+			background-position:center;
+			background-size: contain;
+		}
+
+		.menu {
+			position: sticky;
+			top: 0;
+			background-color: white;
+			padding:10px 20px 10px 20px;
+      color:#1f262e;
+			margin: 0 auto;
+			overflow: hidden;
+      font-family: monospace;
+		}
+		.menu a {
+			float: left;
+      color:#1f262e;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 20px;
+			align: right;
+		}
+		.menu-log {
+			right: auto;
+			float: right;
+		}
+
+    .menu a { text-decoration: none; }
+    .menu a:link { color: #1f262e; }
+    .menu a:visited { color: #1f262e; }
+    .menu a:hover { color: #81b3e5; }
+
+		footer {
+			width: 100%;
+			bottom: 0px;
+			background-color: #white;
+			color: #000;
+			position: relative;
+			padding-top:10px;
+			padding-bottom:20px;
+			text-align:center;
+			font-size:15px;
+			font-weight:normal;
+		}
+		.body_sec {
+			margin-left:20px;
+      align-items: center;
+		}
+
+		p { font-size: 1.2em;
+		    color: #5c7d9d;
+		    font-family: Courier, serif; }
+	</style>
 </head>
+
 <body>
-<div id="wrapper">
-  <header>
-    <h1><a href="index.html">UGLY BRUNCH</a></h1>
-      <h2>[contact]</h2>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">home</a></li>
-      <li><a href="animations.html">animations</a></li>
-      <li><a href="about.html">about</a></li>
-      <li><a href="contact.html">contact</a></li>
-    </ul>
-  </nav>
-  <main>
-  <section>this is where you can request a commission,<br>
-      critique my work, or say just say "hi".<br><br>
-      just send me an <a href="mailto:michaelmichaelgowdy@gmail.com">email</a> :)<br>
-  </section>
-  
-  </main>
-  <footer>
-Copyright&copy; 2022 Ugly Brunch
+
+	<!-- Header Section -->
+	<header>
+		<div class="head1">(contact)</div>
+		<!-- <div class="head2">illustrations</div> -->
+	</header>
+
+	<!-- Menu Navigation Bar -->
+	<nav class="menu">
+		<a href="index.html">home</a>
+		<a href="illustrations.html">illustrations</a>
+		<a href="commissions.html">commissions</a>
+    	<a href="about.html">about</a>
+    	<a href="contact.html">contact</a>
+		<!-- <div class="menu-log">
+			<a href="#login">LOGIN</a>
+		</div> -->
+	</nav>
+
+	<!-- Body section -->
+	<main align="center" class = "body_sec">
+		<p>
+			this is where you can request a commission,<br>
+			critique my work, or say just say "hi".<br><br>
+			just send me an <a href="mailto:michaelmichaelgowdy@gmail.com">email</a> :)<br>
+		</p>
+	</main>
+
+	<!-- Footer Section -->
+	<footer>
+    <!-- Copyright &copy; 2022 michael gowdy -->
+    <!-- <a href="mailto:michaelmichaelgowdy@gmail.com">Ugly Brunch</a> -->
   </footer>
-</div>
 </body>
 </html>
